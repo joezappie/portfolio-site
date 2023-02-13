@@ -37,7 +37,7 @@ class IntroductionView extends LitElement {
         <div class="expand"></div>
         <div>
           <div>Interested in seeing some of my work?</div>
-          <a href="" class="fw500">View the repository for this website</a>
+          <a href="https://github.com/jrj2211/portfolio-site" class="fw500">View the repository for this website</a>
         </div>
       </section>
     `;
