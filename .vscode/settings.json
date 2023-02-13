@@ -25,5 +25,11 @@
   "debug.toolBarLocation": "docked",
   "editor.rulers": [160],
   "search.useReplacePreview": false,
-  "js/ts.implicitProjectConfig.experimentalDecorators": true
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "search.exclude": {
+    "*.bundle.js": true,
+    "*.json": true,
+    "*.min.js": true,
+    "**/dist": true
+  }
 }
