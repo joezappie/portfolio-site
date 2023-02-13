@@ -77,7 +77,10 @@ class SkillsetView extends LitElement {
     let delay = { ms: 0 };
     return html`
       ${map(this.sections, (section) => this.renderSection(section, delay))}
-      <div class="fw300 caption"><ion-icon name="chatbubble-ellipses-outline"></ion-icon> These are the things I use on a regular basis</div>
+      <div class="fw300 caption">
+        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+        <div>Only listed those used on a regular basis</div>
+      </div>
     `;
   }
 

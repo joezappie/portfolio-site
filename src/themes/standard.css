@@ -96,6 +96,8 @@ button ion-icon {
 
 ul {
   margin: 0;
+  margin-left: 24px;
   padding: 0;
   list-style-position: inside;
+  text-indent: -24px;
 }

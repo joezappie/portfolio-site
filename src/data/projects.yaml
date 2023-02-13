@@ -11,14 +11,14 @@
       included:
     </p>
     <ul>
-      <li>building an Electron.js app using the Three.js engine for 3D visualization</li>
-      <li>real-time viewing/control using web sockets</li>
-      <li>a kinematics system</li>
-      <li>serial communication to the embedded systems</li>
-      <li>3D modeling to convert the CAD models into a usable format</li>
-      <li>user authentication & logging system</li>
-      <li>integration with a 3rd party to receive collection plans</li>
-      <li>designing the UI for our pendant controller</li>
+      <li>building an Electron.js app using the Three.js engine for 3D visualization;</li>
+      <li>real-time viewing/control using web sockets;</li>
+      <li>7 axis kinematics system;</li>
+      <li>serial communication to the embedded systems;</li>
+      <li>3D modeling to convert the CAD models into a usable format;</li>
+      <li>user authentication & logging system;</li>
+      <li>integration with a 3rd party to receive collection plans;</li>
+      <li>designing the UI for our pendant controller.</li>
     </ul>
     <p class="technology">Node.js, Electron.js, C++ (N-API)</p>
 
