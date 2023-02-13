@@ -1,0 +1,16 @@
+[page-theme='light'] {
+  --page-bg: #f7f7f7;
+  --box-bg: #fff;
+  --box-radius: 20px;
+
+  --accent-5: #24ccc1;
+
+  --page-header-item-default-color: #505050;
+
+  --page-header-item-active-bg: var(--accent-5);
+  --page-header-item-active-color: #fff;
+
+  --page-header-item-hover-color: var(--accent-5);
+
+  font-family: 'Roboto';
+}

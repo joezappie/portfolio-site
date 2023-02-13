@@ -1,0 +1,57 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-block: 30px;
+  text-align: center;
+}
+
+.about {
+  flex: 1 1 auto;
+  margin: auto;
+
+  & .name {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(22.5deg, #24ccc1, #24c1cc);
+    -webkit-background-clip: text;
+    color: var(--accent-5);
+    font-weight: bold;
+    font-size: 4rem;
+  }
+
+  & .subtext {
+    color: rgb(0 0 0 / 65%);
+    font-weight: 100;
+    font-size: 1.4rem;
+
+    & .degree {
+      color: rgb(0 0 0 / 90%);
+      font-weight: 300;
+    }
+  }
+}
+
+.profile-picture {
+  flex: 0 1 400px;
+  text-align: center;
+}
+
+img {
+  box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+  border: 8px solid #fff;
+  border-radius: 999px;
+  height: 200px;
+}
+
+@media screen and (min-width: 500px) {
+  .about {
+    & .name {
+      font-size: 5rem;
+    }
+
+    & .subtext {
+      font-size: 1.8375rem;
+    }
+  }
+}

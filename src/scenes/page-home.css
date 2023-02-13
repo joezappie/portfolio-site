@@ -1,0 +1,13 @@
+.two-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .two-column {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+  }
+}

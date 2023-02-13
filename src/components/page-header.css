@@ -1,0 +1,55 @@
+:host {
+  --inset: 13px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  gap: 5px;
+  z-index: 1000;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: var(--box-radius);
+  background: var(--box-bg);
+  padding: var(--inset);
+  height: 70px;
+  overflow: auto;
+}
+
+:host(.docked) {
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.item {
+  justify-cotent: center;
+  display: flex;
+  align-items: center;
+  transition: 0.3s background-color ease, 0.1s outline ease, 0.15s color ease, 0.1s background-position ease;
+  cursor: pointer;
+  border-radius: calc(var(--box-radius) - (var(--inset) / 2));
+  background: var(--page-header-item-default-bg, transparent);
+  padding-inline: 16px;
+  height: 100%;
+  color: var(--page-header-item-default-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.item:not([active]):hover {
+  background: var(--page-header-item-hover-bg, transparent);
+  color: var(--page-header-item-hover-color, inherit);
+}
+.item[active] {
+  background: var(--page-header-item-active-bg, transparent);
+  color: var(--page-header-item-active-color, inherit);
+}
+
+.item[active]:hover {
+  outline: 4px solid #c4eef1;
+}
+
+.expand {
+  flex-grow: 1;
+}

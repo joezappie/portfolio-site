@@ -1,0 +1,95 @@
+:host {
+  display: block;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 1.875em;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 1.75em;
+}
+
+.layout,
+.layout.horizontal {
+  display: flex;
+}
+
+.layout.vertical {
+  flex-direction: column;
+}
+
+.layout .expand {
+  flex-grow: 1;
+}
+
+a:link,
+a:visited {
+  color: var(--accent-5);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw100 {
+  font-weight: 100;
+}
+
+.fw300 {
+  font-weight: 300;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s background-color ease;
+  cursor: pointer;
+  outline: 0 solid rgb(0 0 0 / 0%);
+  border-radius: 4px;
+  background: rgb(0 0 0 / 4%);
+  padding-inline: 15px;
+  height: 40px;
+  color: rgb(0 0 0 / 70%);
+}
+
+button:hover {
+  outline: 3px solid rgb(0 0 0 / 3%);
+  background: rgb(0 0 0 / 8%);
+  color: rgb(0 0 0 / 100%);
+}
+
+button ion-icon {
+  --ionicon-stroke-width: 24px;
+  font-size: 1.2em;
+}
