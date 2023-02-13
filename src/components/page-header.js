@@ -47,7 +47,6 @@ class PageHeader extends LitElement {
   };
 
   clickItem(item) {
-    console.log(item);
     if (item.url) {
       window.open(item.url, '_blank');
     } else {

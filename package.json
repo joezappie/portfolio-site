@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@darkobits/vite-plugin-favicons": "^0.3.0",
     "@fontsource/roboto": "^4.5.8",
     "eventemitter2": "^6.4.9",
     "ionicons": "^6.0.4",

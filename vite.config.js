@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import postcssNesting from 'postcss-nesting';
 import babel from 'vite-plugin-babel';
 import ViteYaml from '@modyfi/vite-plugin-yaml';
+import { faviconsPlugin } from '@darkobits/vite-plugin-favicons';
 
 export default defineConfig(async () => ({
   build: {
@@ -47,5 +48,12 @@ export default defineConfig(async () => ({
       },
     }),
     ViteYaml(),
+    faviconsPlugin({
+      icons: {
+        favicons: {
+          source: './src/assets/logo.png',
+        },
+      },
+    }),
   ],
 }));
