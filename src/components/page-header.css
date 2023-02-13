@@ -21,8 +21,8 @@
 }
 
 .item {
-  justify-cotent: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   transition: 0.3s background-color ease, 0.1s outline ease, 0.15s color ease, 0.1s background-position ease;
   cursor: pointer;
