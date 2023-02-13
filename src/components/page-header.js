@@ -19,6 +19,7 @@ class PageHeader extends LitElement {
     { text: 'EDUCATION', path: 'education' },
     { expand: true },
     { text: 'CONTACT', path: 'contact' },
+    { text: html`<ion-icon name="logo-linkedin"></ion-icon>`, url: 'https://www.linkedin.com/in/joejankowiak/' },
   ];
 
   @property()
@@ -36,7 +37,7 @@ class PageHeader extends LitElement {
       if (item.expand) {
         return html`<div class="expand"></div>`;
       }
-      return html`<div class="item" ?active=${this.active === item}>${item.text}</div>`;
+      return html`<div class="item" @click=${() => this.clickItem(item)} ?active=${this.active === item}>${item.text}</div>`;
     });
   }
 
@@ -44,6 +45,15 @@ class PageHeader extends LitElement {
     const scrollTop = document.documentElement.scrollTop;
     this.classList.toggle('docked', scrollTop > 20);
   };
+
+  clickItem(item) {
+    console.log(item);
+    if (item.url) {
+      window.open(item.url, '_blank');
+    } else {
+      // Handle internally
+    }
+  }
 }
 
 export { PageHeader };
