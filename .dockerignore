@@ -1,0 +1,14 @@
+.git*
+.env*
+.eslint*
+.log
+.editor*
+.jsdoc*
+.vscode*
+docker-compose.yml
+test/
+node_modules/
+build/
+_templates/
+migrations/
+dist/

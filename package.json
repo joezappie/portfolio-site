@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docker:build": "docker build . -f Dockerfile --tag joejankowiak/portfolio-site:%npm_package_version%"
   },
   "author": "",
   "license": "ISC",
