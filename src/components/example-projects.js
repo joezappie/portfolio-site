@@ -21,7 +21,6 @@ class ExampleProjects extends LitElement {
 
   async loadProjects() {
     this.projects = (await import('#data/projects.yaml')).default;
-    console.log(this.projects);
   }
 
   render() {
