@@ -1,11 +1,11 @@
 :host {
+  --min-effect-width: 1400px;
   display: flex;
   position: relative;
   justify-content: center;
   background: var(--page-bg);
   padding-inline: 15px;
   min-height: 100%;
-  overflow: hidden;
 }
 
 .container {
@@ -20,11 +20,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  left: 0;
   width: 100%;
-  min-width: 800px;
   height: 400px;
+  overflow: hidden;
 }
 
 .header-effect::before {
@@ -46,6 +45,7 @@
     hsla(180, 57%, 77%, 1) 100%
   );
   background-size: 200% 100%;
+  min-width: var(--min-effect-width);
   height: 100%;
   content: '';
 }
@@ -53,7 +53,6 @@
 .header-effect::after {
   display: block;
   position: absolute;
-  right: 0;
   bottom: 0;
   left: 0;
   z-index: 0;
@@ -62,29 +61,31 @@
   background: rgb(241, 255, 254);
   background: linear-gradient(180deg, transparent, var(--page-bg));
   background-position: bottom;
+  width: 100%;
+  min-width: var(--min-effect-width);
   height: 100%;
   content: '';
 }
 
 @keyframes breathe {
   0% {
-    opacity: 35%;
+    opacity: 40%;
   }
 
   60% {
-    opacity: 50%;
+    opacity: 55%;
   }
 
   70% {
-    opacity: 70%;
+    opacity: 80%;
   }
 
   80% {
-    opacity: 50%;
+    opacity: 55%;
   }
 
   100% {
-    opacity: 35%;
+    opacity: 40%;
   }
 }
 

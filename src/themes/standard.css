@@ -93,3 +93,9 @@ button ion-icon {
   --ionicon-stroke-width: 24px;
   font-size: 1.2em;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}

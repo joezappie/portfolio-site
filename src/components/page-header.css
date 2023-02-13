@@ -1,5 +1,6 @@
 :host {
   --inset: 13px;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
   display: flex;
   position: sticky;
   top: 0;
@@ -12,12 +13,17 @@
   padding: var(--inset);
   height: 70px;
   overflow: auto;
+  scrollbar-width: none;
 }
 
 :host(.docked) {
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+}
+
+:host::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .item {

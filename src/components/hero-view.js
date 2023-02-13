@@ -33,7 +33,7 @@ class HeroView extends LitElement {
     const scrollTop = document.documentElement.scrollTop;
 
     const normalizedScroll = elementHeight - scrollTop;
-    this.style.opacity = Math.max(normalizedScroll / elementHeight, 0);
+    this.style.opacity = Math.max(normalizedScroll / (elementHeight / 1.75), 0);
   };
 }
 
