@@ -45,7 +45,7 @@ tag-item {
   color: rgb(0 0 0 / 70%);
   user-select: none;
 
-  &:not([url='']) {
+  &[url] {
     transition: 0.3s background-color ease, 0.1s outline ease;
     cursor: pointer;
 

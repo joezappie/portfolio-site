@@ -1,13 +1,13 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { assertCSS } from '#core/stylesheet.js';
+import { injectTheme } from '#decorators/theme.js';
 
 import styles from './introduction-view.css?inline';
-import standardStyles from '#themes/standard.css?inline';
 
 @customElement('introduction-view')
 class IntroductionView extends LitElement {
-  static styles = [assertCSS(standardStyles), assertCSS(styles)];
+  @injectTheme(styles)
+  static styles;
 
   render() {
     return html`

@@ -1,13 +1,14 @@
 import { LitElement, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { map } from 'lit/directives/map.js';
-import { assertCSS } from '#core/stylesheet.js';
+import { injectTheme } from '#decorators/theme';
 
 import styles from './page-header.css?inline';
 
 @customElement('page-header')
 class PageHeader extends LitElement {
-  static styles = assertCSS(styles);
+  @injectTheme(styles)
+  static styles;
 
   @property()
   items = [

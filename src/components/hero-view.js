@@ -1,13 +1,13 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { assertCSS } from '#core/stylesheet.js';
+import { injectTheme } from '#decorators/theme.js';
 
 import styles from './hero-view.css?inline';
-import standardStyles from '#themes/standard.css?inline';
 
 @customElement('hero-view')
 class HeroView extends LitElement {
-  static styles = [assertCSS(standardStyles), assertCSS(styles)];
+  @injectTheme(styles)
+  static styles;
 
   connectedCallback() {
     super.connectedCallback();

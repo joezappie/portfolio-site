@@ -2,14 +2,14 @@ import { LitElement, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { map } from 'lit/directives/map.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
-import { assertCSS } from '#core/stylesheet.js';
+import { injectTheme } from '#decorators/theme.js';
 
 import styles from './example-projects.css?inline';
-import standardStyles from '#themes/standard.css?inline';
 
 @customElement('example-projects')
 class ExampleProjects extends LitElement {
-  static styles = [assertCSS(standardStyles), assertCSS(styles)];
+  @injectTheme(styles)
+  static styles;
 
   @property()
   projects;

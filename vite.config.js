@@ -1,9 +1,13 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import postcssNesting from 'postcss-nesting';
 import babel from 'vite-plugin-babel';
 import ViteYaml from '@modyfi/vite-plugin-yaml';
 import { faviconsPlugin } from '@darkobits/vite-plugin-favicons';
+
+import postcssNesting from 'postcss-nesting';
+import tailwind from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+import tailwindConfig from './tailwind.config.js';
 
 export default defineConfig(async () => ({
   build: {
@@ -23,8 +27,8 @@ export default defineConfig(async () => ({
   },
   css: {
     postcss: {
-      plugins: [postcssNesting],
-    },
+      plugins: [tailwind(tailwindConfig), autoprefixer, postcssNesting],
+    }
   },
   plugins: [
     babel({

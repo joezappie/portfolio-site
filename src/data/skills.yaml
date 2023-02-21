@@ -1,0 +1,57 @@
+- title: Languages
+  tags:
+    - name: JavaScript
+      url: 'https://www.javascript.com/'
+    - name: HTML
+    - name: CSS
+    - name: C++
+    - name: Python
+      url: 'https://www.python.org/'
+    - name: MongoDB
+      url: 'https://www.mongodb.com/'
+    - name: MySQL
+      url: 'https://www.mysql.com/'
+- title: Frameworks
+  tags:
+    - name: Feathers.js
+      url: 'https://feathersjs.com/'
+    - name: Electron.js
+      url: 'https://www.electronjs.org/'
+    - name: Three.js
+      url: 'https://threejs.org/'
+    - name: Lit.js
+      url: 'https://lit.dev/'
+    - name: Socket.io
+      url: 'https://socket.io/'
+    - name: Web Components
+      url: 'https://www.webcomponents.org/'
+- title: Enviroments
+  tags:
+    - name: Node.js
+      url: 'https://nodejs.org/en/'
+    - name: git
+      url: 'https://git-scm.com/'
+    - name: Vite.js
+      url: 'https://vitejs.dev'
+    - name: Docker
+      url: 'https://docker.com'
+    - name: Dev Containers
+      url: 'https://code.visualstudio.com/docs/devcontainers/containers'
+    - name: jsdoc
+      url: 'https://jsdoc.app/'
+    - name: Linux
+- title: Software
+  tags:
+    - name: Illustrator
+      url: 'https://www.adobe.com/products/illustrator.html'
+    - name: Photoshop
+      url: 'https://www.adobe.com/products/photoshop.html'
+    - name: Adobe XD
+      url: >-
+        https://www.adobe.com/products/xd/learn/get-started/what-is-adobe-xd-used-for.html
+    - name: Blender
+      url: 'https://blender.org'
+    - name: Inventor
+      url: 'https://autodesk.com/products/inventor'
+    - name: VS Code
+      url: 'https://code.visualstudio.com/'
