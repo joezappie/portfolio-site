@@ -1,5 +1,5 @@
 export default {
-  purge: ['./*.html', './src/**/*.{js,html,css}'],
+  content: ['./*.html', './src/**/*.{js,html,css}'],
   theme: {
     extend: {},
   },

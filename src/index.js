@@ -7,5 +7,7 @@ import '@fontsource/roboto/700.css';
 
 import '#themes/default.css';
 import '#themes/light.css';
-
+if (true) {
+  console.log('hey');
+}
 document.body.append(new AppContainer());
