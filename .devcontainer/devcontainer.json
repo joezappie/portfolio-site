@@ -1,0 +1,45 @@
+{
+  "name": "Portfolio",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "portfolio",
+  "workspaceFolder": "/workspaces",
+  "postCreateCommand": "cd /workspaces/portfolio && npm install",
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
+        "files.autoSaveDelay": 500,
+        "eslint.validate": ["javascript"],
+        "git.enableSmartCommit": false,
+        "git.confirmSync": false,
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false,
+        "files.eol": "\n",
+        "codemetrics.basics.CodeLensHiddenUnder": 10,
+        "terminal.integrated.defaultProfile.windows": "Command Prompt",
+        "diffEditor.ignoreTrimWhitespace": false,
+        "explorer.autoReveal": false,
+        "explorer.fileNesting.enabled": true,
+        "explorer.fileNesting.expand": false,
+        "explorer.fileNesting.patterns": {
+          "*.ts": "${capture}.js",
+          "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts, ${capture}.css",
+          "*.jsx": "${capture}.js",
+          "*.tsx": "${capture}.ts",
+          "tsconfig.json": "tsconfig.*.json",
+          "package.json": "package-lock.json, .npmrc",
+          "Dockerfile": "Dockerfile*, *.dockerignore"
+        },
+        "window.newWindowDimensions": "inherit",
+        "debug.toolBarLocation": "docked",
+        "editor.rulers": [160],
+        "search.useReplacePreview": false,
+        "js/ts.implicitProjectConfig.experimentalDecorators": true
+      },
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "vivaxy.vscode-conventional-commits"]
+    }
+  }
+}
