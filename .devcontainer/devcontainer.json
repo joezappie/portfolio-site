@@ -3,7 +3,7 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "portfolio",
   "workspaceFolder": "/workspaces",
-  "postCreateCommand": "cd /workspaces/portfolio && npm install",
+  "postCreateCommand": "cd ${containerWorkspaceFolder} && npm install",
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
