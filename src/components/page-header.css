@@ -8,12 +8,13 @@
   z-index: 1000;
   box-sizing: border-box;
   margin-top: 20px;
-  border-radius: var(--box-radius);
-  background: var(--box-bg);
-  padding: var(--inset);
   height: 70px;
   overflow: auto;
   scrollbar-width: none;
+
+  @apply p-box;
+  @apply rounded-box;
+  @apply bg-white;
 }
 
 :host(.docked) {
@@ -32,7 +33,7 @@
   align-items: center;
   transition: 0.3s background-color ease, 0.1s outline ease, 0.15s color ease, 0.1s background-position ease;
   cursor: pointer;
-  border-radius: calc(var(--box-radius) - (var(--inset) / 2));
+  border-radius: 6px;
   background: var(--page-header-item-default-bg, transparent);
   padding-inline: 16px;
   height: 100%;

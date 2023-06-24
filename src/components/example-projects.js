@@ -25,8 +25,13 @@ class ExampleProjects extends LitElement {
 
   render() {
     return html`
-      <div class="title">Past/Current Projects</div>
-      <div class="projects">${map(this.projects, this.projectTemplate)}</div>
+      <div class="projects">
+        <div class="rounded-box p-box mt-8 bg-white">
+          <h1 class="font-heading font-light">Example Projects</h1>
+          <p class="text-lg font-light">Below are some examples of my current and past work.</p>
+        </div>
+        ${map(this.projects, this.projectTemplate)}
+      </div>
     `;
   }
 

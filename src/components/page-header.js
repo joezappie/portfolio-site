@@ -17,7 +17,6 @@ class PageHeader extends LitElement {
     { text: 'PROJECTS', path: 'projects' },
     { text: 'DESIGN', path: 'design' },
     { text: 'WOODWORKING', path: 'woodworking' },
-    { text: 'EDUCATION', path: 'education' },
     { expand: true },
     { text: 'CONTACT', path: 'contact' },
     { text: html`<ion-icon name="logo-linkedin"></ion-icon>`, url: 'https://www.linkedin.com/in/joejankowiak/' },

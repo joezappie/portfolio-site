@@ -19,7 +19,7 @@ class HeroView extends LitElement {
     return html`
       <div class="about">
         <div class="name">I'm Joe Jankowiak</div>
-        <div class="subtext"><span class="degree">Software Engineer</span> - Web / UX / Android / Embedded</div>
+        <div class="subtext"><span class="degree">Software Engineer</span> - Web / UX / App Dev / Embedded</div>
       </div>
       <div class="profile-picture">
         <img src="/img/me.png" />
@@ -28,7 +28,6 @@ class HeroView extends LitElement {
   }
 
   onScroll = (evt) => {
-    const distanceToTop = window.pageYOffset + this.getBoundingClientRect().top;
     const elementHeight = this.offsetHeight;
     const scrollTop = document.documentElement.scrollTop;
 

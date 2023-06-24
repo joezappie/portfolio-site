@@ -5,7 +5,6 @@
 }
 
 .projects {
-  container-type: inline-size;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -64,6 +63,10 @@
   & .technology {
     color: rgb(0 0 0 / 45%);
     font-size: 0.925em;
+  }
+
+  & ul {
+    @apply list-disc;
   }
 }
 
