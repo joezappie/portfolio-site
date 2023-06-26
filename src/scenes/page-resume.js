@@ -6,7 +6,7 @@ import { injectTheme } from '#decorators/theme.js';
 class PageResume extends LitElement {
   @injectTheme() static styles;
   render() {
-    return html` <div class="rounded-xl bg-white"></div> `;
+    return html` <div class="mt-4 rounded-xl bg-white">dsfsfsd</div> `;
   }
 }
 

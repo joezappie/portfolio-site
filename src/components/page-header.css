@@ -35,13 +35,11 @@
   cursor: pointer;
   border-radius: 6px;
   background: var(--page-header-item-default-bg, transparent);
-  padding-inline: 16px;
+  padding-inline: 12px;
   height: 100%;
-  color: var(--page-header-item-default-color);
-  font-weight: bold;
   font-size: 1.2rem;
   user-select: none;
-  text-transform: uppercase;
+  @apply text-neutral-600;
 }
 
 .item:not([active]):hover {

@@ -12,5 +12,5 @@
 
   --page-header-item-hover-color: var(--accent-5);
 
-  font-family: 'Roboto';
+  @apply font-sans;
 }

@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 export default {
   content: ['./*.html', './src/**/*.{js,html,css}', './*.yaml'],
   theme: {
@@ -10,6 +12,7 @@ export default {
       },
       fontFamily: {
         heading: 'rokkitt',
+        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
     },
   },

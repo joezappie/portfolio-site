@@ -10,24 +10,21 @@ class PageHeader extends LitElement {
   @injectTheme(styles)
   static styles;
 
+  @property() active;
+
   @property()
   items = [
-    { text: 'HOME', path: 'home' },
-    { text: 'RESUME', path: 'resume' },
-    { text: 'PROJECTS', path: 'projects' },
-    { text: 'DESIGN', path: 'design' },
-    { text: 'WOODWORKING', path: 'woodworking' },
+    { text: 'Home', name: 'home', path: '/' },
+    { text: 'Resume', name: 'resume', path: '/resume' },
+    { text: 'Projects', name: 'projects', path: '/projects' },
+    { text: 'Design', name: 'design', path: '/design' },
+    { text: 'Woodworking', name: 'woodworking', path: '/woodworking' },
     { expand: true },
-    { text: 'CONTACT', path: 'contact' },
     { text: html`<ion-icon name="logo-linkedin"></ion-icon>`, url: 'https://www.linkedin.com/in/joejankowiak/' },
   ];
 
-  @property()
-  active;
-
   connectedCallback() {
     super.connectedCallback();
-    this.active = this.items.at(0);
 
     window.addEventListener('scroll', this.onScroll);
   }
@@ -37,7 +34,7 @@ class PageHeader extends LitElement {
       if (item.expand) {
         return html`<div class="expand"></div>`;
       }
-      return html`<div class="item" @click=${() => this.clickItem(item)} ?active=${this.active === item}>${item.text}</div>`;
+      return html`<div class="item" ?active=${this.active === item.name} @click=${() => this.clickItem(item)}>${item.text}</div>`;
     });
   }
 
@@ -50,7 +47,8 @@ class PageHeader extends LitElement {
     if (item.url) {
       window.open(item.url, '_blank');
     } else {
-      // Handle internally
+      // Handle internall
+      window.location.href = item.path;
     }
   }
 }
