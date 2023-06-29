@@ -31,7 +31,7 @@ class IntroductionView extends LitElement {
             allowing us to provide more for our clients and improve our processes.
           </p>
           <div>
-            <button>View Resume <ion-icon name="enter-outline"></ion-icon></button>
+            <button @click=${() => (window.location.href = '/resume')}>View Resume<ion-icon name="document-text-outline" class="text-lg"></ion-icon></button>
           </div>
           <div class="grow"></div>
           <div>

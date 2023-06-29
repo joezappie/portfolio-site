@@ -4,7 +4,6 @@
   display: flex;
   position: sticky;
   top: 0;
-  gap: 5px;
   z-index: 1000;
   box-sizing: border-box;
   margin-top: 20px;
@@ -33,7 +32,7 @@
   align-items: center;
   transition: 0.3s background-color ease, 0.1s outline ease, 0.15s color ease, 0.1s background-position ease;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 999px;
   background: var(--page-header-item-default-bg, transparent);
   padding-inline: 12px;
   height: 100%;
@@ -43,16 +42,12 @@
 }
 
 .item:not([active]):hover {
-  background: var(--page-header-item-hover-bg, transparent);
-  color: var(--page-header-item-hover-color, inherit);
-}
-.item[active] {
-  background: var(--page-header-item-active-bg, transparent);
-  color: var(--page-header-item-active-color, inherit);
+  @apply text-accent;
 }
 
-.item[active]:hover {
-  outline: 4px solid #c4eef1;
+.item[active] {
+  @apply text-neutral-900;
+  @apply font-bold;
 }
 
 .item ion-icon {

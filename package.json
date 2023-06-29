@@ -16,6 +16,7 @@
     "@darkobits/vite-plugin-favicons": "^0.3.0",
     "@fontsource/roboto": "^4.5.8",
     "@fontsource/rokkitt": "^5.0.3",
+    "@splidejs/splide": "^4.1.4",
     "deep-equal": "^2.2.1",
     "eventemitter2": "^6.4.9",
     "eventemitter3": "^5.0.1",
@@ -23,6 +24,7 @@
     "ionicons": "^6.0.4",
     "lit": "^2.4.0",
     "navigo": "^8.11.1",
+    "photoswipe": "^5.3.7",
     "tailwindcss": "^3.2.6",
     "universal-router": "^9.2.0",
     "url-parse": "^1.5.10"

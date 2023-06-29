@@ -1,0 +1,138 @@
+experiences:
+  - title: Software Engineer
+    company: Limerock Engineering
+    location: Medford, OR
+    timeframe:
+      - start: Sep 2018
+        end: June 2023
+    description: >
+      Prototyping company primarily working in motion control/robotics for military and industrial use.
+      <ul>
+        <li>Developed real-time 3D browser and electron applications using Node.js and Three.js.</li>
+        <li>Developed the kinematics to safely and smoothly articulate our systems.</li>
+        <li>Designed our user interfaces and worked with clients to get feedback.</li>
+        <li>Converted CAD models to mesh models using Blender3D to use in our applications.</li>
+        <li>Developed communication protocols between our user interfaces, embedded systems and 3rd party companies (serial/websockets).</li>
+        <li>Worked with our mechanical engineers to design the physical user interfaces (consoles, pendants).</li>
+        <li>Introduced new technologies to improve our workflow along with developing internal tools.</li>
+        <li>Managed the company infrastructure as our sysadmin.</li>
+      </ul>
+  - title: Software Engineer
+    company: Zyphox LLC
+    location: Medford, OR
+    timeframe:
+      - start: Nov 2021
+        end: Current
+    description: >
+      Developing software to keeping track of purchases, sales, employee time, project management and inventory thats modern and intuitive:
+      <ul>
+        <li>Design and develop the user interface using minimal frameworks - Lit.js, Tailwindcss.</li>
+        <li>Implemented the backend API and schemas using Feathers.js.</li>
+        <li>Developed a multi-tenant system.</li>
+        <li>Developed a custom form library.</li>
+      </ul>
+  - title: Game Developer
+    company: DPTS
+    location: Skaneateles, NY
+    timeframe:
+      - start: Feb 2018
+        end: May 2018
+    description: >
+      Developed my own 3D city management game using Unity Engine in C#:
+      <ul>
+        <li>Procedural city generator which could generate variants of buildings and citizens with routines.</li>
+        <li>Created all assets for the game including 3D models (Maya) and music.</li>
+      </ul>
+  - title: Software Intern
+    company: Alstom Signaling
+    location: Rochester, NY
+    timeframe:
+      - start: Aug 2015
+        end: Dec 2015
+      - start: May 2016
+        end: May 2017
+    description: >
+      <ul>
+        <li>Developed a custom web framework and interface for accessing diagnostics for the non-vital track system.</li>
+        <li>Designed/implemented three core system software modules and assisted on several other modules.</li>
+        <li>Wrote factory acceptance tests for NVSP2 boards and unit tests for the system’s logic engine.</li>
+      </ul>
+  - title: Web Manager
+    company: RIT Reporter
+    location: Rochester, NY
+    timeframe:
+      - start: Oct 2013
+        end: May 2017
+    description: >
+      <ul>
+        <li>Rebuilt Reporters website on a team of two using Drupal 7 which increased visitor count from 200 to 3000 a week.</li>
+        <li>Developed the Reporter Android application and managed development of the Reporter iOS application.</li>
+        <li>Developed a custom Drupal text editor to add change tracking functionality for writers and editors.</li>
+      </ul>
+contact:
+  phone: (716) 545-1085
+  email: jrj2211@rit.edu
+  location: Clarence, NY 14086
+  website: https://joejankowiak.com
+education:
+  school: Rochester Institute of Technology
+  major: Software Engineering
+  level: Bachelor of Science
+  years:
+    start: 2012
+    end: 2017
+skills:
+  - title: LANGUAGES
+    tags:
+      - name: JavaScript
+        url: 'https://www.javascript.com/'
+      - name: HTML/CSS
+      - name: C++
+      - name: Python
+        url: 'https://www.python.org/'
+      - name: MongoDB
+        url: 'https://www.mongodb.com/'
+      - name: MySQL
+        url: 'https://www.mysql.com/'
+  - title: FRAMEWORKS
+    tags:
+      - name: Feathers.js
+        url: 'https://feathersjs.com/'
+      - name: Electron.js
+        url: 'https://www.electronjs.org/'
+      - name: Three.js
+        url: 'https://threejs.org/'
+      - name: Lit.js
+        url: 'https://lit.dev/'
+      - name: Socket.io
+        url: 'https://socket.io/'
+      - name: Web Components
+        url: 'https://www.webcomponents.org/'
+  - title: TOOLS
+    tags:
+      - name: Node.js
+        url: 'https://nodejs.org/en/'
+      - name: git
+        url: 'https://git-scm.com/'
+      - name: Vite.js
+        url: 'https://vitejs.dev'
+      - name: Docker
+        url: 'https://docker.com'
+      - name: Dev Containers
+        url: 'https://jsdoc.app/'
+      - name: Linux
+  - title: SOFTWARE
+    tags:
+      - name: Illustrator
+        url: 'https://www.adobe.com/products/illustrator.html'
+      - name: Photoshop
+        url: 'https://www.adobe.com/products/photoshop.html'
+      - name: Adobe XD
+        url: >-
+          https://www.adobe.com/products/xd/learn/get-started/what-is-adobe-xd-used-for.html
+      - name: Blender
+        url: 'https://blender.org'
+      - name: Inventor
+        url: 'https://autodesk.com/products/inventor'
+      - name: VS Code
+        url: 'https://code.visualstudio.com/'

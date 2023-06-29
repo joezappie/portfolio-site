@@ -2,8 +2,7 @@
   tags:
     - name: JavaScript
       url: 'https://www.javascript.com/'
-    - name: HTML
-    - name: CSS
+    - name: HTML/CSS
     - name: C++
     - name: Python
       url: 'https://www.python.org/'
@@ -25,7 +24,7 @@
       url: 'https://socket.io/'
     - name: Web Components
       url: 'https://www.webcomponents.org/'
-- title: Enviroments
+- title: Tools
   tags:
     - name: Node.js
       url: 'https://nodejs.org/en/'
@@ -37,8 +36,6 @@
       url: 'https://docker.com'
     - name: Dev Containers
       url: 'https://code.visualstudio.com/docs/devcontainers/containers'
-    - name: jsdoc
-      url: 'https://jsdoc.app/'
     - name: Linux
 - title: Software
   tags:

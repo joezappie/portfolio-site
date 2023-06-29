@@ -14,6 +14,9 @@ export default {
         heading: 'rokkitt',
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        accent: '#24ccc1',
+      },
     },
   },
   variants: {

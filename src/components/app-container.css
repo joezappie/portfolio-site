@@ -1,19 +1,15 @@
 :host {
   --min-effect-width: 1400px;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  background: var(--page-bg);
-  padding-inline: 15px;
-  min-height: 100%;
+  display: contents;
 }
 
 .container {
   z-index: 1;
   margin-inline: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 100%;
   max-width: 1400px;
+  min-height: 100%;
 }
 
 .header-effect {
@@ -58,13 +54,14 @@
   z-index: 0;
   animation: scale 6s ease-in-out infinite;
   background: transparent;
-  background: rgb(241, 255, 254);
-  background: linear-gradient(180deg, transparent, var(--page-bg));
   background-position: bottom;
   width: 100%;
   min-width: var(--min-effect-width);
   height: 100%;
   content: '';
+  @apply bg-gradient-to-b;
+  @apply from-transparent;
+  @apply to-neutral-100;
 }
 
 @keyframes breathe {
