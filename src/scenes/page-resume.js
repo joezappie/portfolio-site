@@ -6,7 +6,7 @@ import { injectTheme } from '#decorators/theme.js';
 
 import resume from '#data/resume.yaml';
 
-import styles from './page-resume.css';
+import styles from './page-resume.css?inline';
 
 @customElement('page-resume')
 class PageResume extends LitElement {
