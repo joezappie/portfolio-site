@@ -8,6 +8,7 @@ import '#scenes/page-home.js';
 import '#scenes/page-resume.js';
 import '#scenes/page-projects.js';
 import '#scenes/page-woodworking.js';
+import '#scenes/page-design.js';
 
 import { RouterController } from '#core/router.js';
 

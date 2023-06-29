@@ -33,17 +33,7 @@ class PageWoodworking extends LitElement {
   }
 
   render() {
-    return html`
-      <section class="splide" aria-label="Splide Basic HTML Example">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">Slide 01</li>
-            <li class="splide__slide">Slide 02</li>
-            <li class="splide__slide">Slide 03</li>
-          </ul>
-        </div>
-      </section>
-    `;
+    return html`<div class="p-box rounded-box mt-4 bg-white">Woodworking projects coming soon</div>`;
   }
 
   createRenderRoot() {
