@@ -6,7 +6,7 @@ experiences:
       - start: Sep 2018
         end: June 2023
     description: >
-      Prototyping company primarily working in motion control/robotics for military and industrial use.
+      Prototyping company working in motion control/robotics for military and industrial use.
       <ul>
         <li>Developed real-time 3D browser and electron applications using Node.js and Three.js.</li>
         <li>Developed the kinematics to safely and smoothly articulate our systems.</li>
@@ -24,7 +24,7 @@ experiences:
       - start: Nov 2021
         end: Current
     description: >
-      Developing software to keeping track of purchases, sales, employee time, project management and inventory thats modern and intuitive:
+      This is my own MRP system I've been developing for keeping track of purchases, sales, time, project management and inventory thats modern and intuitive:
       <ul>
         <li>Design and develop the user interface using minimal frameworks - Lit.js, Tailwindcss.</li>
         <li>Implemented the backend API and schemas using Feathers.js.</li>
@@ -53,7 +53,7 @@ experiences:
         end: May 2017
     description: >
       <ul>
-        <li>Developed a custom web framework and interface for accessing diagnostics for the non-vital track system.</li>
+        <li>Developed a custom lightweight web framework and interface for accessing diagnostics for the non-vital track system.</li>
         <li>Designed/implemented three core system software modules and assisted on several other modules.</li>
         <li>Wrote factory acceptance tests for NVSP2 boards and unit tests for the system’s logic engine.</li>
       </ul>
