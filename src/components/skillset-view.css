@@ -1,12 +1,3 @@
-:host {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  border-radius: var(--box-radius);
-  background: var(--box-bg);
-  padding: 20px;
-}
-
 .caption {
   display: flex;
   justify-content: center;

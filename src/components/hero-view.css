@@ -12,10 +12,7 @@
   margin: auto;
 
   & .name {
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(22.5deg, #24ccc1, #24c1cc);
-    -webkit-background-clip: text;
-    color: var(--accent-5);
+    @apply text-accent;
     font-weight: bold;
     font-size: 4rem;
   }

@@ -26,10 +26,12 @@ class SkillsetView extends LitElement {
   render() {
     let delay = { ms: 0 };
     return html`
-      ${map(this.sections, (section) => this.renderSection(section, delay))}
-      <div class="font-light flex gap-2 justify-center text-black text-opacity-40 mt-1">
-        <ion-icon name="chatbubble-ellipses-outline" class="flex-none"></ion-icon>
-        <div>Only listed those used on a regular basis</div>
+      <div class="p-box rounded-box flex flex h-full flex-col gap-4 bg-white">
+        ${map(this.sections, (section) => this.renderSection(section, delay))}
+        <div class="mt-1 flex justify-center gap-2 font-light text-black text-opacity-40">
+          <ion-icon name="chatbubble-ellipses-outline" class="flex-none"></ion-icon>
+          <div>Only listed those used on a regular basis</div>
+        </div>
       </div>
     `;
   }

@@ -52,7 +52,7 @@ h4 {
 
 a:link,
 a:visited {
-  color: var(--accent-5);
+  @apply text-accent;
   font-weight: 500;
   text-decoration: none;
 }
