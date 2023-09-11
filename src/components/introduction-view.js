@@ -8,8 +8,8 @@ class IntroductionView extends LitElement {
 
   render() {
     return html`
-      <div class="p-box rounded-box flex h-full flex-col bg-white">
-        <h1 class="font-heading font-light">Introduction</h1>
+      <div class="p-box rounded-box bg-surface flex h-full flex-col">
+        <h1>Introduction</h1>
         <section class="mt-1 flex h-full flex-col gap-2 text-lg font-light">
           <p>
             I'm a Rochester Institute of Technology graduate with a Bachelor's degree in Software Engineering. Despite only having graduated a few years ago, I

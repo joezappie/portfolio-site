@@ -5,4 +5,7 @@ body {
   padding: 0;
   height: 100%;
   min-height: 100%;
+  @apply bg-page;
+  @apply font-sans;
+  @apply text-on-surface;
 }

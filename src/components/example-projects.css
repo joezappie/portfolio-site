@@ -1,34 +1,4 @@
-.title {
-  margin-block: 40px 10px;
-  font-weight: 100;
-  font-size: 2.5rem;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .project {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-radius: var(--box-radius);
-  background: var(--box-bg);
-  padding: 20px;
-  font-weight: 300;
-  font-size: 1.125rem;
-
-  & .name {
-    margin-bottom: 5px;
-  }
-
-  & .description {
-    align-items: flex-start;
-    gap: 10px;
-  }
-
   & .media {
     display: block;
     transition: 0.1s transform ease;
@@ -45,10 +15,9 @@
     }
 
     &.youtube {
-      position: relative;
-      padding-bottom: 56.25%;
-      width: 100%;
-      height: 0;
+      @apply w-full rounded-box;
+      @apply aspect-video;
+      @apply relative;
 
       & .video {
         position: absolute;
@@ -61,18 +30,11 @@
   }
 
   & .technology {
-    color: rgb(0 0 0 / 45%);
     font-size: 0.925em;
+    @apply text-on-surface-100;
   }
 
   & ul {
     @apply list-disc;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .project {
-    display: grid;
-    grid-template-columns: 1fr minmax(400px, 1fr);
   }
 }

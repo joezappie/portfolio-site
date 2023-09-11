@@ -1,7 +1,7 @@
 {
   "name": "Portfolio",
   "dockerComposeFile": "docker-compose.yml",
-  "service": "portfolio",
+  "service": "portfolio123",
   "workspaceFolder": "/workspaces",
   "postCreateCommand": "cd ${containerWorkspaceFolder} && npm install",
   // Configure tool-specific properties.

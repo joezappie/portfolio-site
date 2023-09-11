@@ -33,7 +33,7 @@ class PageWoodworking extends LitElement {
   }
 
   render() {
-    return html`<div class="p-box rounded-box mt-4 bg-white">Woodworking projects coming soon</div>`;
+    return html`<div class="p-box rounded-box bg-surface mt-4">Woodworking projects coming soon</div>`;
   }
 
   createRenderRoot() {

@@ -1,0 +1,17 @@
+:host {
+  background: #c52c76;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+svg {
+  width: 100%;
+}
+
+svg path {
+  transform-origin: bottom center;
+  width: 100%;
+}

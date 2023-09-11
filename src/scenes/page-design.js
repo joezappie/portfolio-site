@@ -7,7 +7,7 @@ class PageDesign extends LitElement {
   @injectTheme() static styles;
 
   render() {
-    return html` <div class="p-box rounded-box mt-4 bg-white">GFX design examples coming soon</div> `;
+    return html` <div class="p-box rounded-box bg-surface mt-4">GFX design examples coming soon</div> `;
   }
 
   createRenderRoot() {

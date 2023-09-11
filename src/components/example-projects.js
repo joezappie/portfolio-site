@@ -25,8 +25,8 @@ class ExampleProjects extends LitElement {
 
   render() {
     return html`
-      <div class="projects">
-        <div class="rounded-box p-box mt-8 bg-white">
+      <div class="flex flex-col gap-6">
+        <div class="rounded-box p-box bg-surface mt-8">
           <h1 class="font-heading font-light">Example Projects</h1>
           <p class="text-lg font-light">Below are some examples of my current and past work.</p>
         </div>
@@ -37,12 +37,12 @@ class ExampleProjects extends LitElement {
 
   projectTemplate = (project) => {
     return html`
-      <div class="project layout vertical">
-        <div class="description layout vertical">
-          <h3 class="name">${project.name}</h3>
-          ${this.urlTemplate(project)} ${unsafeHTML(project.description)}
+      <div class="project bg-surface p-box rounded-box flex flex-col gap-6 md:grid md:grid-cols-[1fr_minmax(400px,1fr)]">
+        <div>
+          <h2>${project.name}</h2>
+          <div class="align-start flex flex-col gap-3">${this.urlTemplate(project)} ${unsafeHTML(project.description)}</div>
         </div>
-        <div>${this.mediaTemplate(project)}</div>
+        ${this.mediaTemplate(project)}
       </div>
     `;
   };

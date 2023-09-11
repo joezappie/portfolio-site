@@ -17,9 +17,9 @@ class HeroView extends LitElement {
 
   render() {
     return html`
-      <div class="about">
+      <div class="about text-on-surface">
         <div class="name">I'm Joe Jankowiak</div>
-        <div class="subtext"><span class="degree">Software Engineer</span> - Web / UX / App Dev / Embedded</div>
+        <div class="subtext font-light"><span class="degree font-normal">Software Engineer</span> - Full Stack / UX / App Dev / Embedded</div>
       </div>
       <div class="profile-picture">
         <img src="/img/me.png" />

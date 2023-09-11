@@ -9,16 +9,16 @@ class PageProjects extends LitElement {
   @injectTheme() static styles;
   render() {
     return html`
-      <div class="p-box rounded-box mt-4 bg-white">
+      <div class="p-box rounded-box bg-surface mt-4">
         <div class="text-accent text-3xl font-bold">Don't Pray to Satan</div>
         <div class="mb-4 text-xl font-light">Created in Unity 5</div>
-        <img src="/assets/projects/dpts/splash.png" class="w-full rounded " />
+        <img src="/assets/projects/dpts/splash.png" class="rounded-box w-full rounded " />
 
         <h2 class="font-heading mt-4 pb-1">Technologies</h2>
         <div class="flex gap-2">
-          <div class="rounded-full bg-neutral-200 px-3 py-1">Unity 3D</div>
-          <div class="rounded-full bg-neutral-200 px-3 py-1">C#</div>
-          <div class="rounded-full bg-neutral-200 px-3 py-1">Maya</div>
+          <div class="bg-accent rounded-full px-3 py-1 text-white">Unity 3D</div>
+          <div class="bg-accent rounded-full px-3 py-1 text-white">C#</div>
+          <div class="bg-accent rounded-full px-3 py-1 text-white">Maya</div>
         </div>
 
         <h2 class="font-heading mt-4 pb-1">Project Description</h2>
@@ -63,31 +63,31 @@ class PageProjects extends LitElement {
             zones as buildings can never not be next to a road. The goal is to have more of a town than a city, so this aids nicely to that as towns often have
             large patches of trees and fields.
           </p>
-          <img src="/assets/projects/dpts/1.jpg" class="w-full" />
+          <img src="/assets/projects/dpts/1.jpg" class="rounded-box w-full" />
           <p>
             Next I attempted getting roads to rotate in the correct direction by getting the neighboring cells and storing a Y Rotation in the tile. I later
             scrapped this because I realized a simple Y rotation wouldnt help much when it came time to implement intersections. My later approach is using
             seperate generator scripts for Roads, Commercial, Residential and Industrial zones. This way each tile can have its own code to determine what way
             to face and what asset to spawn.
           </p>
-          <img src="/assets/projects/dpts/2.jpg" class="w-full" />
+          <img src="/assets/projects/dpts/2.jpg" class="rounded-box w-full" />
           <p>
             A major hurdle I knew I'd have to figure out was dealing with different sized buildings upon generation. In the picture below you can see that the
             buildings overlap because every tile is spawning a building. My solution is to store the game object when its generated for every tile it overlaps
             so that when I go to spawn a new building I can check if something already exists there. This took more effort to get working than I care to admit.
           </p>
-          <img src="/assets/projects/dpts/3.jpg" class="w-full" />
+          <img src="/assets/projects/dpts/3.jpg" class="rounded-box w-full" />
           <p>
             Below is right after I got different sized building generation working. Since I only have a 2x1 "industrial" building as of right now, some tiles
             are empty as the game doesn't know of anything that will fit there.
           </p>
-          <img src="/assets/projects/dpts/4.jpg" class="w-full" />
+          <img src="/assets/projects/dpts/4.jpg" class="rounded-box w-full" />
           <p>
             Now that I have seperate generators for each of the zones, I went back and updated my road generation which allowed me to add in intersections. I
             also updated the road asset at this time to include sidewalks as I want to have a path for citizens to walk around on and I created a "commercial"
             store asset.
           </p>
-          <img src="/assets/projects/dpts/5.jpg" class="w-full" />
+          <img src="/assets/projects/dpts/5.jpg" class="rounded-box w-full" />
         </div>
 
         <h2 class="font-heading mt-4 pb-1">Basic Road Networking</h2>
@@ -108,7 +108,7 @@ class PageProjects extends LitElement {
             works by implement the ability to click on a node (red cube) and have it draw its neighboring cells (green line) and also draw its neighbors
             neighboring cells (purple line).
           </p>
-          <img src="/assets/projects/dpts/8.jpg" class="w-full" />
+          <img src="/assets/projects/dpts/8.jpg" class="rounded-box w-full" />
           <p>
             At this point I really wanted to start simulating some life so I decide to make cars drive on my road, which I used dijkstra's algorithm for
             pathfinding as not every node is the same distance apart. As of right now, my simplified graph would cause cars to drive off the road should the
@@ -116,7 +116,7 @@ class PageProjects extends LitElement {
             the possible tiles a node can reach between it and its neighboring nodes which gives me high level granularity to get near my target location, but
             then finer granularity to actually get to the objects destination.
           </p>
-          <img src="/assets/projects/dpts/cars.gif" class="w-full" />
+          <img src="/assets/projects/dpts/cars.gif" class="rounded-box w-full" />
         </div>
 
         <h2 class="font-heading mt-4 pb-1">Main Menu And Sound</h2>
@@ -128,7 +128,7 @@ class PageProjects extends LitElement {
           </p>
 
           <iframe
-            class="aspect-video w-full"
+            class="rounded-box aspect-video w-full"
             src="https://www.youtube.com/embed/DkDoi_uBKiA"
             frameborder="0"
             allow="autoplay; encrypted-media"
@@ -144,7 +144,7 @@ class PageProjects extends LitElement {
             will turn on/off at a random offset. With this as soon as it becomes dark, it takes some time for all the street lights and car headlights to turn
             on which is more realistic.
           </p>
-          <img src="/assets/projects/dpts/9.jpg" class="w-full" />
+          <img src="/assets/projects/dpts/9.jpg" class="rounded-box w-full" />
         </div>
 
         <h2 class="font-heading mt-4 pb-1">Building Randomization</h2>
@@ -159,39 +159,39 @@ class PageProjects extends LitElement {
             I also added in color randomization to each building. With this I just loop through all of the materials in the game object and depending on the
             material name, I randomly select a new material. I can specify the material name to look for and the list of colors that it can be set to.
           </p>
-          <img src="/assets/projects/dpts/10.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/11.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/12.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/13.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/14.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/15.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/17.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/18.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/19.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/20.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/21.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/22.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/23.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/24.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/25.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/26.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/27.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/28.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/29.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/30.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/31.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/32.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/33.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/34.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/35.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/36.jpg" class="w-full" />
-          <img src="/assets/projects/dpts/37.jpg" class="w-full" />
+          <img src="/assets/projects/dpts/10.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/11.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/12.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/13.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/14.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/15.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/17.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/18.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/19.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/20.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/21.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/22.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/23.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/24.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/25.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/26.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/27.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/28.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/29.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/30.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/31.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/32.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/33.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/34.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/35.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/36.jpg" class="rounded-box w-full" />
+          <img src="/assets/projects/dpts/37.jpg" class="rounded-box w-full" />
         </div>
 
         <h2 class="font-heading mt-4 pb-1">Teaser Trailer</h2>
         <div class="space-y-4">
           <iframe
-            class="aspect-video w-full"
+            class="rounded-box aspect-video w-full"
             src="https://www.youtube.com/embed/vcf-8XMdwUk"
             frameborder="0"
             allow="autoplay; encrypted-media"
@@ -202,7 +202,7 @@ class PageProjects extends LitElement {
         <h2 class="font-heading mt-4 pb-1">Game Release Trailer</h2>
         <div class="space-y-4">
           <iframe
-            class="aspect-video w-full"
+            class="rounded-box aspect-video w-full"
             src="https://www.youtube.com/embed/pWwiQhjo6zA"
             frameborder="0"
             allow="autoplay; encrypted-media"

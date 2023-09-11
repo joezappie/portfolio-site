@@ -1,10 +1,10 @@
 :host {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  border-radius: var(--box-radius);
-  background: var(--box-bg);
-  padding: 20px;
+  @apply p-4;
+  @apply gap-4;
+  @apply rounded-box;
+  @apply bg-surface;
 }
 
 .caption {
@@ -39,21 +39,25 @@ section {
 tag-item {
   opacity: 0;
   outline: 0px solid rgb(0 0 0 / 0%);
-  border-radius: 1000px;
   background: rgb(0 0 0 / 6%);
   padding: 6px 12px;
   color: rgb(0 0 0 / 70%);
   user-select: none;
 
+  @apply text-on-surface-500;
+
+  @apply rounded-full;
+  @apply bg-surface-frost-500;
+
   &[url] {
     transition: 0.3s background-color ease, 0.1s outline ease;
     cursor: pointer;
 
-    &:hover {
-      outline: 3px solid rgb(0 0 0 / 3%);
-      background: rgb(0 0 0 / 9%);
-      color: rgb(0 0 0 / 100%);
-    }
+    @apply hover:outline-2;
+    @apply hover:outline-surface-frost-200;
+    @apply hover:text-on-surface-900;
+    @apply hover:bg-surface-frost-300;
+    @apply hover:outline;
   }
 }
 

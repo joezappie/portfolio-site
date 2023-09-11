@@ -10,6 +10,8 @@ import '#scenes/page-projects.js';
 import '#scenes/page-woodworking.js';
 import '#scenes/page-design.js';
 
+import '#components/wave-background.js';
+
 import { RouterController } from '#core/router.js';
 
 @customElement('app-container')
@@ -24,12 +26,12 @@ class AppContainer extends LitElement {
     {
       path: '',
       action: async ({ next }) => html`
-        <div class="relative flex min-h-full justify-center bg-neutral-100 px-4">
+        <div class="relative flex min-h-full justify-center px-4">
           <div class="container">
             <page-header active=${this.pageName}></page-header>
             ${await next()}
           </div>
-          <div class="header-effect"></div>
+          <wave-background></wave-background>
         </div>
       `,
       children: [

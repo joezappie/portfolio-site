@@ -17,24 +17,34 @@ p {
   padding: 0;
 }
 
+p {
+  @apply text-on-surface-500;
+}
+
 h1 {
-  font-weight: 300;
-  font-size: 2.5em;
+  @apply font-heading;
+  @apply text-on-surface-600;
+  @apply text-4xl;
+  @apply font-light;
 }
 
 h2 {
-  font-weight: 100;
-  font-size: 1.875em;
+  @apply font-heading;
+  @apply text-on-surface-600;
+  @apply text-3xl;
+  @apply font-light;
 }
 
 h3 {
-  font-weight: 300;
-  font-size: 1.5em;
+  @apply text-on-surface-400;
+  @apply text-2xl;
+  @apply font-medium;
 }
 
 h4 {
-  font-weight: 300;
-  font-size: 1.25em;
+  @apply text-on-surface-200;
+  @apply text-lg;
+  @apply font-medium;
 }
 
 .layout,
@@ -52,9 +62,10 @@ h4 {
 
 a:link,
 a:visited {
-  color: var(--accent-5);
   font-weight: 500;
   text-decoration: none;
+
+  @apply text-accent;
 }
 
 a:hover {
@@ -84,18 +95,17 @@ button {
   gap: 8px;
   transition: 0.2s background-color ease;
   cursor: pointer;
-  outline: 0 solid rgb(0 0 0 / 0%);
-  border-radius: 4px;
-  background: rgb(0 0 0 / 4%);
   padding-inline: 15px;
   height: 40px;
-  color: rgb(0 0 0 / 70%);
-}
 
-button:hover {
-  outline: 3px solid rgb(0 0 0 / 3%);
-  background: rgb(0 0 0 / 8%);
-  color: rgb(0 0 0 / 100%);
+  @apply rounded;
+  @apply text-on-surface-500;
+  @apply bg-surface-frost-500;
+  @apply hover:outline-2;
+  @apply hover:outline-surface-frost-200;
+  @apply hover:text-on-surface-900;
+  @apply hover:bg-surface-frost-700;
+  @apply hover:outline;
 }
 
 button ion-icon {
