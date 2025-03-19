@@ -33,7 +33,36 @@ class PageWoodworking extends LitElement {
   }
 
   render() {
-    return html`<div class="p-box rounded-box mt-4 bg-white">Woodworking projects coming soon</div>`;
+    return html`<div class="p-box rounded-box mt-4 grid gap-4 bg-white md:grid-cols-4">
+      <img src="/img/woodworking/Snapchat-474889815.jpg" class="rounded-box" />
+      <img src="/img/woodworking/Snapchat-1992267622.jpg" class="rounded-box" />
+      <img src="/img/woodworking/kumiko.png" class="rounded-box col-span-2" />
+      <img src="/img/woodworking/DSC00204.JPG" class="rounded-box col-span-2" />
+      <img src="/img/woodworking/20240903_111111.jpg" class="rounded-box" />
+      <img src="/img/woodworking/Snapchat-1140902358.jpg" class="rounded-box" />
+      <img src="/img/woodworking/20211031_123025.jpg" class="rounded-box col-span-2" />
+
+      <img src="/img/woodworking/20180912_232034.jpg" class="rounded-box col-span-2" />
+      <img src="/img/woodworking/20181230_123059.jpg" class="rounded-box col-span-2" />
+      <img src="/img/woodworking/20191009_093732.jpg" class="rounded-box col-span-2" />
+
+      <img src="/img/woodworking/20210108_140741.jpg" class="rounded-box col-span-2" />
+
+      <img src="/img/woodworking/20211202_135106.jpg" class="rounded-box" />
+      <img src="/img/woodworking/20230504_125419.jpg" class="rounded-box" />
+      <img src="/img/woodworking/20211225_105653.jpg" class="rounded-box col-span-2" />
+
+      <img src="/img/woodworking/20231224_103734.jpg" class="rounded-box col-span-2" />
+      <img src="/img/woodworking/20230522_185405.jpg" class="rounded-box " />
+      <img src="/img/woodworking/20230519_212842.jpg" class="rounded-box col-span-2" />
+
+      <img src="/img/woodworking/20240904_194147.jpg" class="rounded-box" />
+      <img src="/img/woodworking/20250124_132626.jpg" class="rounded-box" />
+
+      <img src="/img/woodworking/Snapchat-151405485.jpg" class="rounded-box" />
+
+      <img src="/img/woodworking/Snapchat-1528105602.jpg" class="rounded-box" />
+    </div>`;
   }
 
   createRenderRoot() {

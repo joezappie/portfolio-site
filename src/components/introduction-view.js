@@ -12,14 +12,10 @@ class IntroductionView extends LitElement {
         <h1 class="font-heading font-light">Introduction</h1>
         <section class="mt-1 flex h-full flex-col gap-2 text-lg font-light">
           <p>
-            I'm a Rochester Institute of Technology graduate with a Bachelor's degree in Software Engineering. Despite only having graduated a few years ago, I
-            started doing web development in 2009 while in high school. I consider myself a jack of all trades when it comes to anything web related and love
-            making dynamic web apps that help solve a task rather than informational websites.
-          </p>
-          <p>
-            I enjoy doing full-stack and have gotten to work on exciting projects over the years that have given me a broad skill set beyond programming. I
-            desire a challenge and love learning and keeping up with the latest technologies. I've thrived at every company I've worked for, always becoming an
-            essential and dependable employee.
+            With 10 years of professional experience in software development, my passion for the field began long before my career. I specialize in building
+            complex, purpose-driven web applications that present meaningful challenges to solve. My expertise spans the full web development stack, from UI/UX
+            design and front-end application development to designing back-end APIs, libraries, and handling production web operations. I strive to stay up to
+            date with new technologies, speeding up development and reducing maintenance.
           </p>
           <p>
             Programming is both a career and a hobby to me, and I always look to incorporate software or hardware into any of my personal projects. My favorite

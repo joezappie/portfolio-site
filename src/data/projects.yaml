@@ -7,8 +7,7 @@
       corrosion and delamination's. Equipped with different sensors, it can either make direct contact with the surface or scan from a distance.
     </p>
     <p>
-      I worked on a team of 3 developers, where the other two worked on the embedded systems and I was solely responsible for the control application. This
-      included:
+      My work on this project
     </p>
     <ul>
       <li>building an Electron.js app using the Three.js engine for 3D visualization;</li>
@@ -21,6 +20,21 @@
       <li>designing the UI for our pendant controller.</li>
     </ul>
     <p class="technology">Node.js, Electron.js, C++ (N-API)</p>
+
+- name: Vehicle Motion Platform
+  url: http://nantstudios.com
+  thumbnail: /img/projects/vmp.png
+  description: >
+    <p>
+      Designed for the movie industry, this is a large robot used on a sound stage to simulate the motion of a vehicle. A real vehicle is attached to the platform, which can independently control the suspension of the vehicle unlike no other robot available.
+    </p>
+    <p>
+      My role on this project is designing the front end control software. Built using Lit, Threejs and Electron it is a modern reactive web application that provides real-time 3D control of the robot. 
+    </p>
+    <p>
+      In the software the user can view the current state and diagnostic information, such as the axis positions, faults & hydrualic pressure. They can also create basic moves using a custom built curve editor. I have designed my own kinematics library to handle position, velocities and accelerations for each joint, while also providing multiple kinematic models using synthetic axes (control of multiple axes as a single axis).
+    </p>
+    <p class="technology">Node.js, Lit, Threejs, Electron.js</p>
 
 - name: Zyphox MRP
   url: https://app.zyphox.com

@@ -1,5 +1,22 @@
 experiences:
   - title: Software Engineer
+    company: Zyphox LLC (Self Employed)
+    timeframe:
+      - start: June 2023
+      - end: Current
+    description: >
+      Developing 3D control software for a robotic vehicle platform used in the film industry.
+      <ul>
+        <li>Engineered a reusable kinematics library to model robot velocities,accelerations, and constraints.</li>
+        <li>Created a custom curve editor for planning and simulating playback moves.</li>
+        <li>Architected software to be expandable for synchronization with other robots.</li>
+      </ul>
+      Developing a multi-tenant web-based Manufacturing Resource Planning (MRP) tool.
+      <ul>
+        <li>Implemented modules for purchases, jobs, vendors, sales, and time tracking.</li>
+        <li>Significantly reduced manual labor of purchasing and project tracking.</li>
+      </ul>
+  - title: Software Engineer
     company: Limerock Engineering
     location: Medford, OR
     timeframe:
@@ -16,20 +33,6 @@ experiences:
         <li>Worked with our mechanical engineers to design the physical user interfaces (consoles, pendants).</li>
         <li>Introduced new technologies to improve our workflow along with developing internal tools.</li>
         <li>Managed the company infrastructure as our sysadmin.</li>
-      </ul>
-  - title: Software Engineer
-    company: Zyphox LLC
-    location: Medford, OR
-    timeframe:
-      - start: Nov 2021
-        end: Current
-    description: >
-      This is my own MRP system I've been developing for keeping track of purchases, sales, time, project management and inventory thats modern and intuitive:
-      <ul>
-        <li>Design and develop the user interface using minimal frameworks - Lit.js, Tailwindcss.</li>
-        <li>Implemented the backend API and schemas using Feathers.js.</li>
-        <li>Developed a multi-tenant system.</li>
-        <li>Developed a custom form library.</li>
       </ul>
   - title: Game Developer
     company: DPTS

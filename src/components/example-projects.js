@@ -1,8 +1,9 @@
 import { LitElement, html, nothing } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement, property, query } from 'lit/decorators.js';
 import { map } from 'lit/directives/map.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { injectTheme } from '#decorators/theme.js';
+import { keyed } from 'lit/directives/keyed.js';
 
 import styles from './example-projects.css?inline';
 
@@ -60,9 +61,22 @@ class ExampleProjects extends LitElement {
         <iframe class="video" src="${project.youtube}" frameborder="0" allowfullscreen></iframe>
       </div>`;
     } else if (project.thumbnail) {
-      return html`<img class="media" src="${project.thumbnail}" />`;
+      return html`
+        <a href="${project.thumbnail}" @click=${this.openImage}>
+          <img class="media" src="${project.thumbnail}" />
+        </a>
+        <dialog class="rounded bg-white p-0" style="height: 95vh;width: fit-content; border:0;">
+          <img class="h-full" src="${project.thumbnail}" />
+        </dialog>
+      `;
     }
     return nothing;
+  };
+
+  openImage = (evt) => {
+    evt.preventDefault();
+    const dialog = evt.target.closest('a').parentElement.querySelector('dialog');
+    dialog.showModal();
   };
 }
 
